@@ -1,0 +1,346 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap");
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.inner {
+  position: relative;
+  width: 1180px;
+  margin: auto;
+}
+
+header {
+  height: 100px;
+  background: #343436;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+header ul:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+header h1 {
+  position: absolute;
+  top: 25px;
+  left: 0;
+}
+header h1 a {
+  display: block;
+  padding-left: 25px;
+  width: 118px;
+  height: 44px;
+  background: url("../img/logo.png");
+  font-size: 0;
+}
+
+#gnb { border: 1px solid yellow;padding-left: 250px;
+}
+
+#gnb > ul {position: relative;border:1px solid orange; 
+  
+}
+#gnb > ul > li {
+  
+  float: left;
+  margin: 0 15px;
+}
+
+#gnb > ul > li > a {
+ 
+  color: #fff;
+  display: block;
+  
+  font: 500 21px / 100px "teko", sans-serif;
+  /* font-family: teko; font-size:26px; font-weight: 500; line-height: 100px;*/
+  letter-spacing: 3px;
+}
+.bar { position:absolute; top:70px; left:0; 
+  width:0%; height:3px; background:#BE161E;
+  transition:0.5s ease-out; }   /* 추가 */
+.sub {
+  display: none; margin-left: -10px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  padding:15px 20px;
+  
+}
+.sub > li {
+  margin: 15px 0;
+}
+.sub > li > a {
+  color: #fff;
+  font-size: 15px;
+  white-space: nowrap;
+  font-size: 15px;
+}
+/*
+#gnb > ul > li:hover .sub {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  transition: 0.6s;
+  filter: opacity(1);
+}
+
+ #gnb > ul > li > a::after {
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  content: "";
+  background: #be161e;
+  top: 65px;
+  left: 0;
+  transition: 0.4s;
+} 
+
+#gnb > ul > li > a:hover:after {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  content: "";
+  background: #be161e;
+  top: 65px;
+  left: 0;
+  transition: 0.5s;
+}
+*/
+.global-menu {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+}
+.global-menu li {
+  float: left;
+  padding-left: 20px;
+  
+}
+.global-menu a {
+  display: block;
+  color: #999;
+  font-size: 13px;
+}
+.join {
+}
+.join a {
+  background: #666;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: -10px;
+}
+
+#visual {
+  width: 100%;
+  min-width: 500px;
+  height: 900px;
+  margin-top: 100px;
+
+  overflow: hidden;
+}
+#visual .slider {
+  width: 1920px;
+  transform: translate(-50%);
+  position: relative;
+  left: 50%;
+}
+main {
+  height: 1000px;
+}
+main::after {display: block; content: ""; clear:both}
+.main-product {
+  padding-top: 150px;
+}
+.main-product > .inner {
+  height: 620px;
+}
+
+.product-image {
+  width: 310px;
+  padding-top: 100px;
+}
+.product-link {
+  display: block;
+  width: 480px;
+  height: 620px;
+  background: url("../img/gold.jpg");
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+
+.product-text {
+  position: absolute;
+  top: 80px;
+  left: 385px;
+}
+.en-name {
+  font: 500 90px / 0.9 "teko", sans-serif;
+  letter-spacing: 5px;
+}
+.ko-name {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+.info {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.benefit {
+  text-align: center;
+}
+.benefit-tomato {
+  width: 375px;
+  height: 442px;
+  background: url(../img/tomato.jpg);
+  margin-left: 180px;
+}
+.benefit-contents {
+  height: 520px;
+  background: url(../img/background.jpg);
+  margin-top: -120px;
+  padding-top: 90px;
+  position: relative;
+  text-align: center;
+}
+.benefit-contents ul {
+  width: 100%;
+  margin-top: 50px;
+}
+.benefit-contents li {
+  float: left;
+  width: 33%;
+  display: block;
+}
+.benefit-contents h3 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+.benefit-contents p {
+  color: #bbb;
+  font-size: 15px;
+  padding-top: 20px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+.benefit-contents .icon-name {
+  margin-top: 40px;
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+.benefit-contents .icon-info {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+  letter-spacing: -0.5px;
+  font-weight: bold;
+}
+
+.benefit-contents li a {
+  display: block;
+  line-height: 20px;
+}
+.benefit-contents li a span {
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+}
+.benefit-contents li a span img {
+  width: 95px;
+}
+
+.reward {
+  margin-top: 70px;
+  padding-left: 350px;
+}
+.reward ::after {display: block; content:"" ; clear:both;}
+.reward-title {
+  border: 6px solid black;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 280px;
+  height: 260px;
+}
+
+.text-data {
+  background: #fff;
+  position: absolute;
+  top: -13px;
+  left: -6px;
+  width: 200px;
+  height: 200px;
+  letter-spacing: 4px;
+}
+.text-data h3 {
+  font: 500 35px/1 "teko", sans-serif;
+}
+.text-data h3 span {
+  font-size: 60px;
+  line-height: 100px;
+}
+.reward ol {
+}
+.reward ol li {
+  float: left;
+  width: 33.33%;
+  margin-top: 35px;
+}
+.reward ol li p {
+  vertical-align: top;
+}
+.reward ol li em {
+  font-size: 16px;
+  color: #96603d;
+  opacity: 0.4;
+  vertical-align: top;
+  line-height: 1;
+  word-break: break-all;
+  letter-spacing: 0;
+}
+.reward ol .reward-li .reward-li-name {
+  margin-top: 10px;
+  color: #222;
+  font-size: 18px;
+  font-weight: bold;
+}
+.reward ol .reward-li .reward-li-info {
+  margin-top: 10px;
+  font-weight: 400;
+  word-break: break-all;
+  line-height: 21px;
+  font-size: 14px;
+  color: #666;
+  height: 63px;
+  overflow: hidden;
+}
+
+
+/* foooooooooooooooooooooooooooooooooooooter*/
+footer {border:solid 1px blue;padding: 265px 0 80px; position: relative; z-index:505; display: block;}
+footer .speed-big-menu {border:2px solid red; position: absolute; top: -80px; left:50%;
+width: 1180px; margin-left:-590px; overflow: hidden;}
+footer .speed-big-menu .speedmenu {float:left; width:33.33%}
+footer .speed-big-menu .m1 {background: #907354;}
+footer .speed-big-menu .m2 {background: #434343;}
+footer .speed-big-menu .m3 {background: #c30606;}
+
+
+footer .speed-big-menu .speedmenu a {position: relative; display: block; height: 160px;
+padding: 30px; }
+footer .speed-big-menu .speedmenu:first-child > a {margin-left:0;}
+footer .speed-big-menu .speedmenu a span {display: block; }
+footer .speed-big-menu .speedmenu a .txt {position:absolute; top:57px; left:30px; line-height:20px; text-decoration: none; font-size:14px; color:#fff;}
+footer .speed-big-menu .speedmenu a .title img {max-width: 100%;}
+.icon {position: absolute; top:50px; right:90px;}
