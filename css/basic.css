@@ -38,10 +38,10 @@ header h1 a {
   font-size: 0;
 }
 
-#gnb { border: 1px solid yellow;padding-left: 250px;
+#gnb { padding-left: 250px;
 }
 
-#gnb > ul {position: relative;border:1px solid orange; 
+#gnb > ul {position: relative;
   
 }
 #gnb > ul > li {
@@ -266,7 +266,7 @@ main::after {display: block; content: ""; clear:both}
 }
 .reward ::after {display: block; content:"" ; clear:both;}
 .reward-title {
-  border: 6px solid black;
+  
   position: absolute;
   top: 20px;
   left: 0px;
@@ -328,8 +328,8 @@ main::after {display: block; content: ""; clear:both}
 
 
 /* foooooooooooooooooooooooooooooooooooooter*/
-footer {border:solid 1px blue;padding: 265px 0 80px; position: relative; z-index:505; display: block;}
-footer .speed-big-menu {border:2px solid red; position: absolute; top: -80px; left:50%;
+footer {padding: 265px 0 80px; position: relative; z-index:505; display: block;}
+footer .speed-big-menu { position: absolute; top: -80px; left:50%;
 width: 1180px; margin-left:-590px; overflow: hidden;}
 footer .speed-big-menu .speedmenu {float:left; width:33.33%}
 footer .speed-big-menu .m1 {background: #907354;}
